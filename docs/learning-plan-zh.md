@@ -88,6 +88,8 @@ print(outputs)
 
 ### 第 1 周：跑通模型，建立一次生成的全貌
 
+配套材料：[完整学习文档](week01/learning-guide.md)、[源码分析文档](week01/source-analysis.md)、[单请求/双请求观察脚本](week01/observe.py)。建议先按学习文档的七天安排执行，再用源码分析核对实验中的状态变化。
+
 **学习重点：** token、logits、自回归生成；CPU 与 GPU 分工；显存、进程、CUDA 的基本含义。熟悉的模型基础可以快速跳过。
 
 **源码：** `example.py` → `LLMEngine.generate` → `add_request` → `step`，辅以 `Config` 和 `SamplingParams`。
